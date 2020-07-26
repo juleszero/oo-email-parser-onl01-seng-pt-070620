@@ -7,7 +7,7 @@ class EmailAddressParser
   end
   
   def parse
-    emails.split(" ").reject{|x| x == ", " || x == ","}.uniq
+    emails.split(" ").uniq
   end
 
 end
